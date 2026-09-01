@@ -98,9 +98,14 @@ h1 em, h2 em { font-family: 'Playfair Display', Georgia, serif; font-weight: 500
 .project-meta span { color: var(--orange); font-size: 20px; line-height: 14px; transition: transform .2s; }
 .project:hover .project-meta span { transform: translate(3px,-3px); }
 .project-description { max-width: 630px; margin: 13px 0 14px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.project-outcome { display: flex; align-items: baseline; gap: 8px; margin: 0 0 14px; color: #5e5953; font-size: 12px; line-height: 1.45; }
+.project-outcome b { flex: 0 0 auto; color: var(--orange); font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: .07em; text-transform: uppercase; }
 .tech-tags { display: flex; flex-wrap: wrap; gap: 7px; }
 .tech-tags span { padding: 5px 8px; border: 1px solid var(--line); border-radius: 100px; color: #5f5a54; font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: .02em; transition: border-color .2s, background .2s, color .2s; }
 .project:hover .tech-tags span { border-color: rgba(239,109,69,.42); background: rgba(239,109,69,.06); color: var(--ink); }
+.project-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 17px; }
+.project-link { display: inline-flex; align-items: center; gap: 9px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 100px; color: #5f5a54; font-size: 10px; font-weight: 700; transition: background .2s, border-color .2s, color .2s, transform .2s; }
+.project-link:hover { border-color: var(--orange); color: var(--ink); transform: translateY(-2px); }.project-link-primary { border-color: var(--ink); background: var(--ink); color: var(--paper); }.project-link-primary:hover { background: var(--orange); border-color: var(--orange); color: #fff; }
 .visual-weecaf { display: grid; place-items: center; background: #d1dcce; }
 .product-word { position: relative; z-index: 1; color: #28635b; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(68px, 12vw, 164px); letter-spacing: -.09em; }
 .product-subtitle { position: absolute; top: 24%; left: 17%; z-index: 1; color: #28635b; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
@@ -128,6 +133,11 @@ h1 em, h2 em { font-family: 'Playfair Display', Georgia, serif; font-weight: 500
 .about-copy h2 { margin-bottom: 30px; font-size: clamp(42px, 5vw, 70px); }
 .about-copy > p:not(.eyebrow) { max-width: 470px; color: var(--muted); font-size: 15px; line-height: 1.6; }
 .about-copy .text-link { margin-top: 17px; }
+.proof { padding-top: 85px; padding-bottom: 135px; background: rgba(255,255,255,.23); }
+.proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+.proof-card { min-height: 230px; padding: 29px 28px 25px; border-right: 1px solid var(--line); }.proof-card:last-child { border-right: 0; }
+.proof-card > span { display: block; margin-bottom: 55px; color: var(--orange); font-family: 'DM Mono', monospace; font-size: 10px; }.proof-card h3 { margin: 0 0 10px; font-size: 22px; letter-spacing: -.05em; }.proof-card p { max-width: 260px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.proof-note { margin: 25px 0 0; color: var(--muted); font-size: 12px; }
 .services { padding-top: 100px; padding-bottom: 150px; }
 .services .section-heading { margin-bottom: 42px; }
 .service-list { border-top: 1px solid var(--line); }
@@ -210,6 +220,7 @@ h1 em, h2 em { font-family: 'Playfair Display', Georgia, serif; font-weight: 500
   .project-visual, .project-wide .project-visual { min-height: 310px; }
   .visual-caption { left: 12px; bottom: 12px; max-width: calc(100% - 24px); font-size: 7px; }
   .project-description { font-size: 12px; }.tech-tags { gap: 6px; }.tech-tags span { font-size: 7px; }
+  .project-outcome { font-size: 11px; }.project-actions { margin-top: 14px; }
   .visual-word { font-size: 93px; }
   .product-word { font-size: 74px; }.product-subtitle { top: 20%; left: 11%; font-size: 8px; }.product-orb { width: 72px; height: 72px; right: 8%; }
   .digit-grid { left: 13%; }.digit-grid i { width: 51px; height: 51px; font-size: 28px; }
@@ -219,6 +230,7 @@ h1 em, h2 em { font-family: 'Playfair Display', Georgia, serif; font-weight: 500
   .about-stamp { width: 235px; height: 235px; }
   .about-stamp span { font-size: 30px; }
   .about-copy h2 { font-size: clamp(45px, 13vw, 65px); }
+  .proof { margin: 0 -22px; padding: 80px 22px; }.proof-grid { grid-template-columns: 1fr; }.proof-card { min-height: auto; padding: 24px 0; border-right: 0; border-bottom: 1px solid var(--line); }.proof-card > span { margin-bottom: 27px; }
   .services { padding-top: 75px; padding-bottom: 100px; }
   .service-item { grid-template-columns: 32px 1fr 22px; gap: 12px; padding: 22px 0; }
   .service-item p { grid-column: 2 / 3; line-height: 1.4; }
@@ -248,6 +260,7 @@ h1 em, h2 em { font-family: 'Playfair Display', Georgia, serif; font-weight: 500
   .project-visual { min-height: 290px; }
   .project-wide .project-visual { min-height: 380px; }
   .contact { margin-right: -4vw; margin-left: -4vw; padding-right: 4vw; padding-left: 4vw; }
+  .proof { margin-right: -4vw; margin-left: -4vw; padding-right: 4vw; padding-left: 4vw; }
 }
 
 /* Small phones: use the compact horizontal padding and readable full-width controls above. */

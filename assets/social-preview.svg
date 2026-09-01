@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f1eee8"/>
+  <path d="M-30 555C190 430 328 699 602 548S953 405 1255 590" fill="none" stroke="#ef6d45" stroke-width="3" opacity=".72"/>
+  <path d="M-50 491C213 621 345 273 619 414s340 244 640 39" fill="none" stroke="#1e1d1c" stroke-width="2" opacity=".27"/>
+  <rect x="86" y="70" width="66" height="66" rx="33" fill="#1e1d1c"/>
+  <text x="107" y="115" font-family="Georgia,serif" font-size="38" fill="#f1eee8">M</text>
+  <text x="177" y="109" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#1e1d1c">Muhammad Abubakar</text>
+  <text x="86" y="240" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-4" fill="#1e1d1c">Full-Stack</text>
+  <text x="86" y="320" font-family="Georgia,serif" font-size="78" font-style="italic" fill="#ef6d45">Developer.</text>
+  <text x="91" y="397" font-family="Arial,sans-serif" font-size="26" fill="#615d58">React · Python · Node.js · APIs</text>
+  <rect x="86" y="462" width="448" height="58" rx="29" fill="#1e1d1c"/>
+  <text x="113" y="500" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#f1eee8">portfolio-abubkr.netlify.app</text>
+  <circle cx="985" cy="228" r="133" fill="#f5c768"/>
+  <text x="919" y="255" font-family="Georgia,serif" font-size="104" fill="#1e1d1c">M</text>
+  <rect x="827" y="370" width="247" height="122" rx="12" fill="#1e1d1c" transform="rotate(7 827 370)"/>
+  <text x="852" y="414" font-family="Arial,sans-serif" font-size="16" fill="#c7c1b8">Building the web</text>
+  <text x="852" y="451" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#f1eee8">that works.</text>
+</svg>
